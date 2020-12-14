@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		503A685D24115BE000EC2F43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A685C24115BE000EC2F43 /* AppDelegate.m */; };
+		503A686024115BE000EC2F43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A685F24115BE000EC2F43 /* ViewController.m */; };
+		503A686224115BE500EC2F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503A686124115BE500EC2F43 /* Assets.xcassets */; };
+		503A686524115BE500EC2F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503A686324115BE500EC2F43 /* Main.storyboard */; };
+		503A686824115BE500EC2F43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503A686724115BE500EC2F43 /* main.m */; };
+		503A686E2411715300EC2F43 /* UserClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 503A686D2411715300EC2F43 /* UserClient.h */; };
+		503A68702411716F00EC2F43 /* UserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503A686F2411716F00EC2F43 /* UserClient.cpp */; };
+		503A6873241297EB00EC2F43 /* UserClientInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 503A6872241297EB00EC2F43 /* UserClientInterface.c */; };
+		5052A5E823FC2FD0008EE23B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FF889D23F6D97E00149C2C /* IOKit.framework */; };
+		50CC49B623DA01F800BF4952 /* myIOService.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 50CC49B523DA01F800BF4952 /* myIOService.hpp */; };
+		50CC49B823DA01F800BF4952 /* myIOService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50CC49B723DA01F800BF4952 /* myIOService.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		503A685924115BE000EC2F43 /* com.apriorit.USBTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = com.apriorit.USBTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		503A685B24115BE000EC2F43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		503A685C24115BE000EC2F43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		503A685E24115BE000EC2F43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		503A685F24115BE000EC2F43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		503A686124115BE500EC2F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		503A686424115BE500EC2F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		503A686624115BE500EC2F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503A686724115BE500EC2F43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		503A686924115BE500EC2F43 /* com_apriorit_USBTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = com_apriorit_USBTracker.entitlements; sourceTree = "<group>"; };
+		503A686D2411715300EC2F43 /* UserClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
+		503A686F2411716F00EC2F43 /* UserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UserClient.cpp; sourceTree = "<group>"; };
+		503A6871241297EB00EC2F43 /* UserClientInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserClientInterface.h; sourceTree = "<group>"; };
+		503A6872241297EB00EC2F43 /* UserClientInterface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UserClientInterface.c; sourceTree = "<group>"; };
+		50CC49B223DA01F800BF4952 /* USBTracker.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USBTracker.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CC49B523DA01F800BF4952 /* myIOService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = myIOService.hpp; sourceTree = "<group>"; };
+		50CC49B723DA01F800BF4952 /* myIOService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = myIOService.cpp; sourceTree = "<group>"; };
+		50CC49B923DA01F800BF4952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FF889D23F6D97E00149C2C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		503A685624115BE000EC2F43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC49AF23DA01F800BF4952 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5052A5E823FC2FD0008EE23B /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		503A685A24115BE000EC2F43 /* com.apriorit.USBTracker */ = {
+			isa = PBXGroup;
+			children = (
+				503A685B24115BE000EC2F43 /* AppDelegate.h */,
+				503A685C24115BE000EC2F43 /* AppDelegate.m */,
+				503A685E24115BE000EC2F43 /* ViewController.h */,
+				503A685F24115BE000EC2F43 /* ViewController.m */,
+				503A686124115BE500EC2F43 /* Assets.xcassets */,
+				503A686324115BE500EC2F43 /* Main.storyboard */,
+				503A686624115BE500EC2F43 /* Info.plist */,
+				503A686724115BE500EC2F43 /* main.m */,
+				503A686924115BE500EC2F43 /* com_apriorit_USBTracker.entitlements */,
+				503A6871241297EB00EC2F43 /* UserClientInterface.h */,
+				503A6872241297EB00EC2F43 /* UserClientInterface.c */,
+			);
+			path = com.apriorit.USBTracker;
+			sourceTree = "<group>";
+		};
+		50CC49A823DA01F800BF4952 = {
+			isa = PBXGroup;
+			children = (
+				50CC49B423DA01F800BF4952 /* IOService */,
+				503A685A24115BE000EC2F43 /* com.apriorit.USBTracker */,
+				50CC49B323DA01F800BF4952 /* Products */,
+				50FF889C23F6D97E00149C2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50CC49B323DA01F800BF4952 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50CC49B223DA01F800BF4952 /* USBTracker.kext */,
+				503A685924115BE000EC2F43 /* com.apriorit.USBTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50CC49B423DA01F800BF4952 /* IOService */ = {
+			isa = PBXGroup;
+			children = (
+				50CC49B523DA01F800BF4952 /* myIOService.hpp */,
+				50CC49B723DA01F800BF4952 /* myIOService.cpp */,
+				50CC49B923DA01F800BF4952 /* Info.plist */,
+				503A686D2411715300EC2F43 /* UserClient.h */,
+				503A686F2411716F00EC2F43 /* UserClient.cpp */,
+			);
+			path = IOService;
+			sourceTree = "<group>";
+		};
+		50FF889C23F6D97E00149C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50FF889D23F6D97E00149C2C /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		50CC49AD23DA01F800BF4952 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503A686E2411715300EC2F43 /* UserClient.h in Headers */,
+				50CC49B623DA01F800BF4952 /* myIOService.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		503A685824115BE000EC2F43 /* com.apriorit.USBTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503A686A24115BE500EC2F43 /* Build configuration list for PBXNativeTarget "com.apriorit.USBTracker" */;
+			buildPhases = (
+				503A685524115BE000EC2F43 /* Sources */,
+				503A685624115BE000EC2F43 /* Frameworks */,
+				503A685724115BE000EC2F43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.apriorit.USBTracker;
+			productName = com.apriorit.USBTracker;
+			productReference = 503A685924115BE000EC2F43 /* com.apriorit.USBTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50CC49B123DA01F800BF4952 /* USBTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50CC49BC23DA01F800BF4952 /* Build configuration list for PBXNativeTarget "USBTracker" */;
+			buildPhases = (
+				50CC49AD23DA01F800BF4952 /* Headers */,
+				50CC49AE23DA01F800BF4952 /* Sources */,
+				50CC49AF23DA01F800BF4952 /* Frameworks */,
+				50CC49B023DA01F800BF4952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBTracker;
+			productName = test;
+			productReference = 50CC49B223DA01F800BF4952 /* USBTracker.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50CC49A923DA01F800BF4952 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Maksym Nesterchuk";
+				TargetAttributes = {
+					503A685824115BE000EC2F43 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					50CC49B123DA01F800BF4952 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 50CC49AC23DA01F800BF4952 /* Build configuration list for PBXProject "USBTracker" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50CC49A823DA01F800BF4952;
+			productRefGroup = 50CC49B323DA01F800BF4952 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50CC49B123DA01F800BF4952 /* USBTracker */,
+				503A685824115BE000EC2F43 /* com.apriorit.USBTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		503A685724115BE000EC2F43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503A686224115BE500EC2F43 /* Assets.xcassets in Resources */,
+				503A686524115BE500EC2F43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC49B023DA01F800BF4952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		503A685524115BE000EC2F43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503A686024115BE000EC2F43 /* ViewController.m in Sources */,
+				503A6873241297EB00EC2F43 /* UserClientInterface.c in Sources */,
+				503A686824115BE500EC2F43 /* main.m in Sources */,
+				503A685D24115BE000EC2F43 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50CC49AE23DA01F800BF4952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CC49B823DA01F800BF4952 /* myIOService.cpp in Sources */,
+				503A68702411716F00EC2F43 /* UserClient.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		503A686324115BE500EC2F43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				503A686424115BE500EC2F43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		503A686B24115BE500EC2F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = com.apriorit.USBTracker/com_apriorit_USBTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = com.apriorit.USBTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apriorit.SMJobBlessSampleHelper.com-apriorit-USBTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		503A686C24115BE500EC2F43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = com.apriorit.USBTracker/com_apriorit_USBTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = com.apriorit.USBTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apriorit.SMJobBlessSampleHelper.com-apriorit-USBTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50CC49BA23DA01F800BF4952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50CC49BB23DA01F800BF4952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50CC49BD23DA01F800BF4952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = 79GVW8VKCU;
+				INFOPLIST_FILE = IOService/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULE_NAME = home.test;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apriorit.USBBlockerDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		50CC49BE23DA01F800BF4952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = 79GVW8VKCU;
+				INFOPLIST_FILE = IOService/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULE_NAME = home.test;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apriorit.USBBlockerDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		503A686A24115BE500EC2F43 /* Build configuration list for PBXNativeTarget "com.apriorit.USBTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503A686B24115BE500EC2F43 /* Debug */,
+				503A686C24115BE500EC2F43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CC49AC23DA01F800BF4952 /* Build configuration list for PBXProject "USBTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC49BA23DA01F800BF4952 /* Debug */,
+				50CC49BB23DA01F800BF4952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50CC49BC23DA01F800BF4952 /* Build configuration list for PBXNativeTarget "USBTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50CC49BD23DA01F800BF4952 /* Debug */,
+				50CC49BE23DA01F800BF4952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50CC49A923DA01F800BF4952 /* Project object */;
+}
